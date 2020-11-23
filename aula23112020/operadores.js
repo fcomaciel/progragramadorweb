@@ -5,8 +5,12 @@ let num2 = 11;
 
 // +=
 
-console.log('Resultado de num1(5) += num2(11)', num1 += num2);
-console.log('Resultado de num1(5) *= num2(11)', num1 *= num2);
+console.log('Atribuição de soma: num1(5) += num2(11)', num1 += num2);
+console.log('Atribuição de subtração: -= num2(11)', num1 -= num2);
+console.log('Atribuição de multiplicação: num1(5) *= num2(11)', num1 *= num2);
+console.log('Atribuição de divisão: num1(5) /= num2(11)', num1 /= num2);
+console.log('Atribuição de módulo: num1(5) %= num2(11)', num1 %= num2);
+console.log('Atribuição de exponenciação: num1(5) **= num2(11)', num1 **= num2);
 
-console.log('Alô mundo !');
-alert('Alô mundo !');
+// console.log('Alô mundo !');
+// alert(10 * 5);
