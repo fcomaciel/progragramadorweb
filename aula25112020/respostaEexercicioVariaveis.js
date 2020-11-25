@@ -1,4 +1,3 @@
-
 /*
 1.Declare uma variável de nome flor e atribua a ela o valor 'rosa'. 
 Declare uma segunda variáveis arvore e atribua a ela o valor 'ipe'.
@@ -23,7 +22,7 @@ console.log(na + nb) // resultado 15
 resultado através do console.*/
 var x4 = 5, y4 = 10;
 let z4 = x4 + y4;
-console.log(z4)
+console.log(z4);
 
 /*
 5.Em uma única linha, declare três variáveis com os seguintes nomes e valores:
@@ -47,3 +46,20 @@ let z7 = y7;
 y7 = x7;
 x7 = z7;
 console.log(x7);
+
+/*
+8. No código a seguir, 'Mark' é uma string.
+O que é 'name' (responda com 1 palavra)?
+let name = "Mark";
+
+Resposta:
+Nome ou identificador da variável 
+*/
+
+// 9. Em uma palavra, se o valor da variável está entre aspas, o tipo de dado é?
+// Resposta:
+// String
+
+// 10.Qual é a palavra-chave que declara uma variável?
+// Resposta:
+// var ou let
