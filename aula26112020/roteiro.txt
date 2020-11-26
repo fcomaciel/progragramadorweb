@@ -1,0 +1,6 @@
+Arrays
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+Template strings
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/template_strings
+
