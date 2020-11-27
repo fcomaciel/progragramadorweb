@@ -1,5 +1,6 @@
-frutas.unshift('Goiaba');
-console.log(frutas.length);
-console.log(frutas);
-
-console.log(frutas[3]);
+let x = 10, y = '5';
+if (x == 10 || y === 5) {
+    console.log('Teste lógico verdadeiro');
+} else {
+    console.log('Teste lógico falso');
+}
