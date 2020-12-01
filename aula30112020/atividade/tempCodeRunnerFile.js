@@ -1,1 +1,1 @@
-var num1 = 5; var num2 = 10; var num3 = num1 - num2 = 5;
+let x = 6, y = 5, z = x * y; console.log(z); // 30

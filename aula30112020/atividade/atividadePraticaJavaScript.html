@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <title>Resposta - Atividade Prática JavaScript</title>
 </head>
 <body>
     <h1>Resposta - Atividade Prática JavaScript</h1>
+     
+    <div id="adicao"></div>
+    <div id="subtracao"></div>
+    <div id="multiplicacao"></div>
+    <div id="divisao"></div>
+    <div id="imc"></div>
 
     <script>
-        let m = 18, n = 3, o = m -= n; console.log(o);
-        let numC = 15; let numD = 8; resultado = numC + numD; console.log ("Resultado: " + resultado);
-        let x = 25, y =10; let z = y - x ; console.log(z); // resultado: -15
+        let x = 5; let y = 10; let z;
+        let peso = 72; let altura = 1.65; let imc;
+
+        z = x + y;
+        // document.write("Adição: " + z + "<br>");
+        document.getElementById('adicao').innerHTML = "Adição: " + z;
+        
+        z = x - y;
+        document.write("Subtração: " + z + "<br>");
+
+        z = x * y;
+        document.write("Multiplicação: " + z + "<br>");
+
+        z = x / y;
+        document.write("Divisão: " + z + "<br>");
+        
+        // Template string
+        // document.write(`IMC: ${imc = (peso / (altura * altura)).toFixed(2)}`);
+        document.getElementById('imc').innerHTML = (`IMC: ${imc = (peso / (altura * altura)).toFixed(2)}`);
+
     </script>
 </body>
 </html>
