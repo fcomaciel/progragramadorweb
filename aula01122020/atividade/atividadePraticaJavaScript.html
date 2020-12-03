@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Resposta - Atividade Prática JavaScript</title>
+</head>
+<body>
+    <h1>Resposta - Atividade Prática JavaScript</h1>
+     
+    <div id="adicao"></div>
+    <div id="subtracao"></div>
+    <div id="multiplicacao"></div>
+    <div id="divisao"></div>
+    <div id="imc"></div>
+
+    <script>
+        let x = 5; let y = 10; let z;
+        let peso = 72; let altura = 1.65; let imc;
+
+        z = x + y;
+        // document.write("Adição: " + z + "<br>");
+        document.getElementById('adicao').innerHTML = "Adição: " + z;
+        
+        z = x - y;
+        // document.write("Subtração: " + z + "<br>");
+        document.getElementById('subtracao').innerHTML = "Subtração: " + z;
+
+        z = x * y;
+        // document.write("Multiplicação: " + z + "<br>");
+        document.getElementById('multiplicacao').innerHTML = "Multiplicação: " + z;
+
+        z = x / y;
+        // document.write("Divisão: " + z + "<br>");
+        document.getElementById('divisao').innerHTML = "Divisão: " + z;
+        
+        // Template string
+        // document.write(`IMC: ${imc = (peso / (altura * altura)).toFixed(2)}`);
+        // Template String usa acento grave: ``
+        document.getElementById('imc').innerHTML = (`IMC: ${imc = (peso / (altura * altura)).toFixed(2)}`);
+
+    </script>
+</body>
+</html>
