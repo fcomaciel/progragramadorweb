@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lógica de progranação</title>
+</head>
+<body>
+    <script>
+        /*
+        Caracteres não permitidos para identificador de variáveis e constantes
+        +,-,*, /; %, (,),1.551,@,#.
+        */
+
+        //var nome, idade;
+
+        //nome = prompt("Qual o seu nome?:");
+        //idade = prompt("Qual a sua idade?:");
+        // alert(`Nome: ${nome} \nIdade: ${idade}`);
+        /*
+        Escreva um algorítmo que receba um número inteiro e
+        mostre através da caixa de alerta os seus visinhos. Ex.
+        para 10 será mostrado 9 e 11. 
+        */
+       var numero = prompt("Digite um número inteiro:");
+       var anterior = parseInt(numero) - 1;
+       var posterior = parseInt(numero) + 1;
+
+       alert(`${anterior}, ${posterior}`);
+       
+    </script>
+</body>
+</html>
