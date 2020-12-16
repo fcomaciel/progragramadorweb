@@ -20,7 +20,7 @@ function toCelsius(f) {
 }
 document.getElementById("resultado").innerHTML = toCelsius(f);
 
-// Funação sem passagem de argumento
+// Função sem passagem de argumento
 
 carro();
 
