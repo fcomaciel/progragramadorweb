@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Eventos HTML5</title>
+</head>
+<body>
+    <h1>Eventos do HTML5</h1>
+    <p>
+        Um evento HTML pode ser algo que o navegador faz, ou algo que um usuário faz.‎
+    </p>
+    <h3>Exemplo de eventos:</h3>
+    <ul>
+        <li>Uma página web HTML terminou de carregar‎</li>
+        <li>Um campo de entrada HTML foi alterado‎</li>
+        <li>‎Um botão HTML foi clicado‎</li>
+    </ul>
+    <table border="1">
+        <tr>
+            <th>Evento</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td>onchange</td>
+            <td>‎Um elemento HTML foi alterado‎</td>
+        </tr>
+        <tr>
+            <td>onclick</td>
+            <td>‎O usuário clica em um elemento HTML‎</td>
+        </tr>
+        <tr>
+            <td>onmouseover</td>
+            <td>‎O usuário move o mouse sobre um elemento HTML‎</td>
+        </tr>
+        <tr>
+            <td>onkeydown</td>
+            <td>‎O usuário pressiona uma tecla de teclado‎</td>
+        </tr>
+        <tr>
+            <td>onload</td>
+            <td>‎O navegador terminou de carregar a página</td>
+        </tr>
+    </table>
+
+    <p id="resultado"></p>
+    <p id="soma"></p>
+
+    <!-- <button onclick="document.getElementById('resultado').innerHTML=Date()">A hora é</button> -->
+    <br><br>
+    <!-- <button onclick="this.innerHTML = Date()">Que horas são?</button> -->
+
+    <!-- <p>Clique no botão abaixo para exibir a Data/Hora</p> -->
+
+    <!-- <button onclick="displayDate()">Data/hora</button> -->
+
+    <script>
+        let n1, n2;
+        function minhaSoma(n1, n2) {
+            return n1 + n2;
+        }
+        console.log(minhaSoma(3, 8));
+
+        window.onload = function displayDate() {
+            document.getElementById("resultado").innerHTML = Date();
+        }
+    </script>
+    <!-- 
+        1. Criar um evento 'onclick' que exiba uma mensegam de boas vindas na caixa 'alert'.
+
+        2. Criar um evento que quando um botão é clicado, a função "minhaSoma" envia o resultado 
+           para o parágrafo 'soma'.‎
+
+        3. Crie um elemento <div> e elabore um evento que ao passar o mouse sobre ele, ele 
+           ficar vermelho.‎ Modelo de stylo com JS "this.style.backgroundColor='red'".
+     -->
+</body>
+</html>

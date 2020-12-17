@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Resosulçao exercícios</title>
+</head>
+<body>
+    <h1>Resosulçao eventos HTML</h1>
+    <p id="soma"></p>
+    <div onmouseover="this.style.backgroundColor='red'">Aqui uma Tag &lt;div&gt;.</div>
+    <!--
+    1. Criar um evento 'onclick' que exiba uma mensegam de boas vindas na caixa 'alert'.
+
+    2. Criar um evento que quando um botão é clicado, a função "minhaSoma" envia o resultado 
+        para o parágrafo 'soma'.‎
+
+    3. Crie um elemento <div> e elabore um evento que ao passar o mouse sobre ele, ele 
+        ficar vermelho.‎ Modelo de stylo com JS "this.style.backgroundColor='red'".
+    -->
+    <br>
+    <button onclick="this.innerHTML = alert('Seja ven-vindo!')">Olá?</button>
+    <br><br>
+    <button onclick="document.getElementById('soma').innerHTML = minhaSoma(3, 8)">Somar</button>
+    <script>
+            let n1, n2;
+            function minhaSoma(n1, n2) {
+                return n1 + n2;
+        }
+    </script>
+
+</body>
+</html>

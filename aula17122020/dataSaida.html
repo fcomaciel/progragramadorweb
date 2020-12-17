@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Saídas de datas</title>
+</head>
+<body>
+    <h1>Saídas de datas</h1>
+    <p>
+        O objeto Date é um contrutor e para utilizá-lo devemos chamá-lo com a palavra <em>new</em>. Exemplo:
+    </p>
+    <p>
+        new Date() <br>
+        new Date(<em>year, month, day, minutes, secunds, millisecunds</em>) <br>
+        new Date(<em>millisecunds</em>) <br>
+        new Date(<em>date string</em>)
+    </p>
+    <div id="dataHora"></div>
+    <div id="anoMes"></div>
+    <div id="dataString"></div>
+    <div id="millisecundos"></div>
+
+    <script>
+        // YYYY-MM-DDTHH:MM:SSZ
+        let d = new Date();
+        document.getElementById('dataHora').innerHTML = d.getFullYear();
+
+        // year, month, day, minutes, secunds, millisecunds
+        // 0 -> Jan; 11 -> Dez
+        let a = new Date(21, 11, 24);
+        document.getElementById('anoMes').innerHTML = a;
+
+        let s = new Date("October, 13, 2014 11:13:00");
+        document.getElementById('dataString').innerHTML = s;
+
+        let m = new Date(86400000);
+        document.getElementById('millisecundos').innerHTML = m;
+        </script>
+</body>
+</html>
