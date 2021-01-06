@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Laço for com lista - JavaScript</title>
+</head>
+<body>
+    <h1>Laço for com lista - JavaScript</h1>
+    <p id="resultado"></p>
+
+    <script>
+        var carros = ["Ford", "Volvo", "Volkswagen", "Fiat", "Chevrolet"];
+        var txt = "";
+
+        for (var i = 0; i < carros.length; i++) {
+            txt += carros[i] + "<br>"; 
+        }
+
+        document.getElementById('resultado').innerHTML = txt;
+        // Para aula de amanhã: Switch
+    </script>
+</body>
+</html>
+

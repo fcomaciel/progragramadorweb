@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Laço while - JavaScript</title>
+</head>
+<body>
+    <h1>Laço while - JavaScript</h1>
+    <p id="resultado"></p>
+
+    <script>
+        var txt = "";
+        var i = 0;
+
+        while (i < 10) {
+            txt += "<br>O número é " + i;
+            i++;
+        }
+        
+        document.getElementById('resultado').innerHTML = txt;
+    </script>
+</body>
+</html>
